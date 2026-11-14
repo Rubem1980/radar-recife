@@ -88,6 +88,59 @@ def data_para_yyyymmdd(data_str):
         return m.group(3) + m.group(2) + m.group(1)
     return ""
 
+# Padrões para extrair rua e bairro de ementas de indicações
+RE_RUA = re.compile(r"(?:rua|av\.?|avenida|travessa|alameda|praça|pç\.?|largo|rodovia|estrada|via|trav\.?)\s+([^,;.\n]{3,60})", re.IGNORECASE)
+RE_BAIRRO = re.compile(r"(?:bairro|distrito|região|área)\s+(?:de\s+)?([^,;.\n]{3,40})", re.IGNORECASE)
+# Fallback: pegar tudo após "no bairro" / "em" próximo ao final
+RE_BAIRRO2 = re.compile(r"(?:no|na|em)\s+o?\s*bairro\s+(?:de\s+)?([^,;.\n]{3,40})", re.IGNORECASE)
+
+def extrair_rua_bairro(ementa):
+    """Tenta extrair (rua, bairro) de uma ementa de indicação."""
+    if not ementa:
+        return None, None
+    rua = None
+    bairro = None
+    m_rua = RE_RUA.search(ementa)
+    if m_rua:
+        rua = limpar_texto(m_rua.group(1))
+    m_bairro = RE_BAIRRO.search(ementa) or RE_BAIRRO2.search(ementa)
+    if m_bairro:
+        bairro = limpar_texto(m_bairro.group(1))
+    return rua, bairro
+
+def agrupar_por_bairro(proposicoes, vereadores):
+    """
+    Agrupa proposições tipo 'b' (indicação/bairro) por rua/bairro extraída da ementa.
+    Retorna lista no formato esperado pelo app.js:
+    [{r: rua, b: bairro, ids: [ids dos vereadores]}]
+    """
+    grupos = {}
+    for item in proposicoes:
+        if item[4] != "b":
+            continue
+        ementa = item[2] or ""
+        rua, bairro = extrair_rua_bairro(ementa)
+        if not rua and not bairro:
+            continue
+        chave = (rua or "", bairro or "")
+        if chave not in grupos:
+            grupos[chave] = {"r": rua or "", "b": bairro or "", "ids": set()}
+        # índices dos vereadores envolvidos -> converter para IDs
+        for idx in (item[6] or []):
+            if idx < len(vereadores):
+                grupos[chave]["ids"].add(int(vereadores[idx]["id"]))
+
+    resultado = []
+    for (rua, bairro), g in grupos.items():
+        resultado.append({
+            "r": g["r"],
+            "b": g["b"],
+            "ids": sorted(list(g["ids"])),
+        })
+    # Ordenar por número de vereadores (mais relevantes primeiro)
+    resultado.sort(key=lambda x: len(x["ids"]), reverse=True)
+    return resultado
+
 # ============================================================================
 # COLETA DE VEREADORES
 # ============================================================================
@@ -193,6 +246,9 @@ def coletar_proposicoes(vereadores):
                     aprovado = "Aprovado" if (situacao and "aprovado" in situacao.lower()) else ""
 
                     tipo_cat = TIPO_PARA_CAT.get(tipo_sapl, "o")
+                    # Detectar indicações pelo texto da ementa quando tipo não mapeado
+                    if tipo_cat == "o" and ementa and re.match(r"^(indica|indicação|indicaçoes|recomenda)", ementa.strip(), re.IGNORECASE):
+                        tipo_cat = "b"
                     tipo_numero = f"{sgl} {num}/{ano_mat}" if sgl and num else str(cod)
 
                     item = [
@@ -219,7 +275,7 @@ def coletar_proposicoes(vereadores):
 # GERAÇÃO DO ARQUIVO dados.js
 # ============================================================================
 
-def gerar_dados_js(vereadores, proposicoes, saida="src/dados/dados.js"):
+def gerar_dados_js(vereadores, proposicoes, saida="/home/biu/Documentos/Default Project/radar-recife/dados/dados.js"):
     """Gera o arquivo dados.js com todos os dados."""
     hoje = date.today().isoformat()
 
@@ -240,11 +296,16 @@ def gerar_dados_js(vereadores, proposicoes, saida="src/dados/dados.js"):
         for c in "bchlo":
             catot[c] = catot.get(c, 0) + v.get("cat", {}).get(c, 0)
 
+    # Agrupar proposições tipo 'b' por bairro/rua para busca
+    rep = agrupar_por_bairro(proposicoes, vereadores)
+    bairros = sorted(set(g["b"] for g in rep if g["b"]))
+    bairrosn = [len([g for g in rep if g["b"] == b]) for b in bairros]
+
     dados = {
         "ger": hoje,
         "gerh": hoje + "T00:00-03:00",
         "posse": DATA_POSSE,
-        "rep": [],
+        "rep": rep,
         "ult": hoje,
         "sess": [],
         "semreg": [],
@@ -253,8 +314,8 @@ def gerar_dados_js(vereadores, proposicoes, saida="src/dados/dados.js"):
         "v": vereadores,
         "items": proposicoes,
         "catot": catot,
-        "bairros": [],
-        "bairrosn": [],
+        "bairros": bairros,
+        "bairrosn": bairrosn,
         "sal": {"v": 16503, "lei": "Subsídio vigente", "u": ""},
     }
 
