@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar Recife — Raio-X da Câmara Municipal</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Topo -->
+<header class="top">
+  <div class="wrap">
+    <div class="tag"><i style="background:#0a8a5f"></i> Ao vivo</div>
+    <h1><img src="img/logo.png" alt="Radar Recife"></h1>
+    <div class="live"><i></i> Dados oficiais da Câmara Municipal de Recife</div>
+    <div class="meter" id="meter-salario">
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#fff;margin-bottom:8px">
+        <span>Salário pago aos vereadores desde a posse</span>
+        <span class="num" id="valor-salario">R$ 0</span>
+      </div>
+      <div style="font-size:12px;opacity:.9">estimativa: 39 salários de R$ 16.503 por mês desde 1º de janeiro de 2025</div>
+    </div>
+  </div>
+</header>
+
+<!-- Seção: O que pediram pelo seu bairro? -->
+<section class="wrap" style="margin:24px 0 10px">
+  <h2 style="font-size:17px;margin:0 0 10px;font-weight:700">O que pediram pelo seu bairro?</h2>
+  <div style="display:flex;gap:8px;flex-wrap:wrap">
+    <input type="text" id="busca-bairro" placeholder="Digite o bairro ou a rua" style="flex:1;padding:10px 14px;border:1px solid var(--hair);border-radius:8px;font:inherit">
+    <button id="btn-limpar-bairro" style="padding:10px 16px;border:1px solid var(--hair);border-radius:8px;background:var(--soft);color:var(--ink);font:inherit;cursor:pointer">Limpar</button>
+  </div>
+  <p class="mute" id="info-bairro" style="margin-top:8px;font-size:13px">Sem nada digitado, você vê a cidade inteira.</p>
+</section>
+
+<!-- Seção: Os vereadores -->
+<section class="wrap" style="margin:0 0 10px">
+  <h2 style="font-size:17px;margin:0 0 10px;font-weight:700;display:flex;justify-content:space-between;align-items:center">
+    Os <span id="total-vereadores">39</span> vereadores
+    <div style="display:flex;gap:6px">
+      <select id="filtro-partido" style="padding:6px 10px;border:1px solid var(--hair);border-radius:6px;background:#fff;font:inherit">
+        <option value="">Partido: Todos</option>
+      </select>
+      <select id="ordenacao" style="padding:6px 10px;border:1px solid var(--hair);border-radius:6px;background:#fff;font:inherit">
+        <option value="nome">Ordenar por Nome (A–Z)</option>
+        <option value="faltas">Quem mais faltou</option>
+        <option value="proposicoes">Mais propostas de lei</option>
+        <option value="homenagens">Mais homenagens</option>
+        <option value="pedidos">Mais pedidos para os bairros</option>
+        <option value="nao">Quem mais votou “não”</option>
+      </select>
+    </div>
+  </div>
+  <div class="grid" id="grid-vereadores">
+    <!-- cards injetados pelo JS -->
+  </div>
+</section>
+
+<!-- Seção: Transparência -->
+<section class="wrap" style="margin:24px 0 40px;color:var(--mute);font-size:13px;line-height:1.7">
+  <h2 style="font-size:15px;margin-bottom:8px">De onde vêm os números</h2>
+  <p><strong>Tudo sai do sistema da própria Câmara Municipal.</strong> Nada é digitado à mão.</p>
+  <p><strong>Presença:</strong> contabilizamos sessões ordinárias desde a posse.</p>
+  <p><strong>Homenagem ou trabalho:</strong> o site separa cada proposta pelo tipo e pelas palavras do texto oficial, com a mesma regra para todos. Abra qualquer grupo, leia uma por uma e tire sua conclusão.</p>
+  <p><strong>Pedido não é obra feita:</strong> um pedido de melhoria é só um pedido. O sistema da Câmara não informa se a Prefeitura atendeu.</p>
+  <p><strong>Salário:</strong> estimativa com base no subsídio vigente.</p>
+  <p><strong>Achou um erro?</strong> Abra a ficha oficial pelo link do crachá e compare. Se a Câmara corrigir o registro, o número muda na atualização seguinte.</p>
+  <p style="margin-top:12px"><strong>Radar Recife</strong> é um projeto independente, feito por morador, sem vínculo com a Câmara, com a Prefeitura ou com partido.</p>
+</section>
+
+<script src="dados/dados.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
