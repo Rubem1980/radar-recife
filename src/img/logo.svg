@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120">
+  <rect width="420" height="120" fill="#0f1720" rx="12"/>
+  <text x="210" y="48" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="2">RADAR</text>
+  <text x="210" y="92" font-family="system-ui, sans-serif" font-size="16" fill="#1d5fe0" text-anchor="middle" letter-spacing="1">Recife · Câmara Municipal</text>
+  <circle cx="210" cy="48" r="6" fill="#ff3131" opacity="0"/>
+  <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/>
+</svg>
