@@ -10,10 +10,9 @@
 </head>
 <body>
 
-<!-- Topo -->
 <header class="top">
   <div class="wrap">
-    <div class="tag"><i style="background:#0a8a5f"></i> Ao vivo</div>
+    <div class="tag"><i></i> Ao vivo</div>
     <h1><img src="img/logo.png" alt="Radar Recife"></h1>
     <div class="live"><i></i> Dados oficiais da Câmara Municipal de Recife</div>
     <div class="meter" id="meter-salario">
@@ -26,25 +25,23 @@
   </div>
 </header>
 
-<!-- Seção: O que pediram pelo seu bairro? -->
-<section class="wrap" style="margin:24px 0 10px">
-  <h2 style="font-size:17px;margin:0 0 10px;font-weight:700">O que pediram pelo seu bairro?</h2>
-  <div style="display:flex;gap:8px;flex-wrap:wrap">
-    <input type="text" id="busca-bairro" placeholder="Digite o bairro ou a rua" style="flex:1;padding:10px 14px;border:1px solid var(--hair);border-radius:8px;font:inherit">
-    <button id="btn-limpar-bairro" style="padding:10px 16px;border:1px solid var(--hair);border-radius:8px;background:var(--soft);color:var(--ink);font:inherit;cursor:pointer">Limpar</button>
+<section class="bairro wrap">
+  <h2>O que pediram pelo seu bairro?</h2>
+  <div class="wrap">
+    <input type="text" id="busca-bairro" placeholder="Digite o bairro ou a rua">
+    <button id="btn-limpar-bairro">Limpar</button>
   </div>
-  <p class="mute" id="info-bairro" style="margin-top:8px;font-size:13px">Sem nada digitado, você vê a cidade inteira.</p>
+  <p class="mute" id="info-bairro">Sem nada digitado, você vê a cidade inteira.</p>
 </section>
 
-<!-- Seção: Os vereadores -->
-<section class="wrap" style="margin:0 0 10px">
-  <h2 style="font-size:17px;margin:0 0 10px;font-weight:700;display:flex;justify-content:space-between;align-items:center">
+<section class="sec-ver wrap">
+  <h2>
     Os <span id="total-vereadores">39</span> vereadores
-    <div style="display:flex;gap:6px">
-      <select id="filtro-partido" style="padding:6px 10px;border:1px solid var(--hair);border-radius:6px;background:#fff;font:inherit">
+    <div class="filtros">
+      <select id="filtro-partido">
         <option value="">Partido: Todos</option>
       </select>
-      <select id="ordenacao" style="padding:6px 10px;border:1px solid var(--hair);border-radius:6px;background:#fff;font:inherit">
+      <select id="ordenacao">
         <option value="nome">Ordenar por Nome (A–Z)</option>
         <option value="faltas">Quem mais faltou</option>
         <option value="proposicoes">Mais propostas de lei</option>
@@ -53,21 +50,18 @@
         <option value="nao">Quem mais votou “não”</option>
       </select>
     </div>
-  </div>
-  <div class="grid" id="grid-vereadores">
-    <!-- cards injetados pelo JS -->
-  </div>
+  </h2>
+  <div class="grid" id="grid-vereadores"></div>
 </section>
 
-<!-- Seção: Transparência -->
-<section class="wrap" style="margin:24px 0 40px;color:var(--mute);font-size:13px;line-height:1.7">
-  <h2 style="font-size:15px;margin-bottom:8px">De onde vêm os números</h2>
+<section class="transp wrap">
+  <h2>De onde vêm os números</h2>
   <p><strong>Tudo sai do sistema da própria Câmara Municipal.</strong> Nada é digitado à mão.</p>
   <p><strong>Presença:</strong> contabilizamos sessões ordinárias desde a posse.</p>
   <p><strong>Homenagem ou trabalho:</strong> o site separa cada proposta pelo tipo e pelas palavras do texto oficial, com a mesma regra para todos. Abra qualquer grupo, leia uma por uma e tire sua conclusão.</p>
   <p><strong>Pedido não é obra feita:</strong> um pedido de melhoria é só um pedido. O sistema da Câmara não informa se a Prefeitura atendeu.</p>
   <p><strong>Salário:</strong> estimativa com base no subsídio vigente.</p>
-  <p><strong>Achou um erro?</strong> Abra a ficha oficial pelo link do crachá e compare. Se a Câmara corrigir o registro, o número muda na atualização seguinte.</p>
+  <p style="margin-top:12px"><strong>Achou um erro?</strong> Abra a ficha oficial pelo link do crachá e compare. Se a Câmara corrigir o registro, o número muda na atualização seguinte.</p>
   <p style="margin-top:12px"><strong>Radar Recife</strong> é um projeto independente, feito por morador, sem vínculo com a Câmara, com a Prefeitura ou com partido.</p>
 </section>
 
