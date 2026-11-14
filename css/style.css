@@ -27,15 +27,20 @@ svg{display:block}
 .mute{color:var(--mute)}
 
 /* topo */
-.top{padding:26px 0 6px}
+.top{padding:26px 0 10px}
 .tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--mute);background:var(--soft);border-radius:999px;padding:5px 12px}
 .tag i{width:7px;height:7px;border-radius:50%;background:var(--l)}
-h1{margin:18px 0 14px}
+h1{margin:16px 0 10px}
 h1 img{width:min(100%,420px);height:auto}
+.sub{font-size:15px;font-weight:700;color:var(--ink);margin:0 0 12px;line-height:1.4}
 .live{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--ink);background:var(--soft);border-radius:999px;padding:6px 12px;margin-top:10px}
 .live i{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(255,49,49,.6);animation:pulse 1.8s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(255,49,49,0)}100%{box-shadow:0 0 0 0 rgba(255,49,49,0)}}
-.meter{background:var(--ink);color:#fff;border-radius:22px;padding:18px 20px 16px;margin:10px 0 0}
+.meter{background:var(--ink);color:#fff;border-radius:22px;padding:18px 20px 16px;margin:12px 0 0}
+.btn-cta{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:var(--ink);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:13.5px;font-weight:700;text-decoration:none;cursor:pointer}
+.btn-cta:hover{opacity:.9}
+.btn-cta-sec{background:#fff;color:var(--ink);border:1px solid var(--hair)}
+.btn-cta-sec:hover{border-color:var(--mute)}
 
 /* cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:10px}
@@ -89,3 +94,12 @@ h1 img{width:min(100%,420px);height:auto}
 
 /* cores das categorias */
 .k-b{--k:var(--b);--kt:var(--b-t)}.k-c{--k:var(--c);--kt:var(--c-t)}.k-h{--k:var(--h);--kt:var(--h-t)}.k-l{--k:var(--l);--kt:var(--l-t)}.k-o{--k:var(--o);--kt:var(--o-t)}
+
+/* seções extras */
+.problema h2,.trabalho h2{font-size:17px;margin:0 0 10px;font-weight:700;color:var(--ink)}
+.problema{background:var(--soft);border-radius:12px;padding:18px 20px}
+.trabalho{background:var(--ink);color:#fff;border-radius:12px;padding:22px 20px}
+.trabalho h2,.trabalho p{color:#fff}
+.trabalho p{margin:0}
+.trabalho .btn-cta{background:#fff;color:var(--ink)}
+.trabalho .btn-cta:hover{opacity:.9}
