@@ -195,30 +195,33 @@
       const pctPres = t ? Math.round((v.P||0)/t*100) : 0;
       const C = 2*Math.PI*30;
       const seg = (n,col,off)=> n?`<circle cx="38" cy="38" r="30" fill="none" stroke="${col}" stroke-width="9" stroke-dasharray="${n/t*C} ${C}" stroke-dashoffset="${-off/t*C}" transform="rotate(-90 38 38)"/>`:"";
-      const ring = `<div class="ring"><svg width="76" height="76" viewBox="0 0 76 76" role="img" aria-label="${v.P} presenças em ${t} sessões"><circle cx="38" cy="38" r="30" fill="none" stroke="#eef1f4" stroke-width="9"/>${seg(v.P||0,"#0f1720",0)}${seg(v.A||0,"#e0a23a",v.P||0)}${seg(v.F||0,"#d23a2e",(v.P||0)+(v.A||0))}</svg><b class="num">${pctPres}%</b></div>`;
+      const ring = `<div class="ring"><svg width="76" height="76" viewBox="0 0 76 76" role="img" aria-label="${v.P||0} presenças em ${t} sessões"><circle cx="38" cy="38" r="30" fill="none" stroke="#eef1f4" stroke-width="9"/>${seg(v.P||0,"#0f1720",0)}${seg(v.A||0,"#e0a23a",v.P||0)}${seg(v.F||0,"#d23a2e",(v.P||0)+(v.A||0))}</svg><b class="num">${pctPres}%</b></div>`;
       const cat = v.cat||{};
       const bars = ORDER.map(c=>v.cat[c]?`<i class="k-${c}" style="flex:${v.cat[c]} 1 0"></i>`:"").join("");
-      const picks = ORDER.map(c=>`<button class="pick k-${c} num" type="button" data-v="${idx}" data-c="${c}" ${v.cat[c]?"":"disabled"}><i></i><span>${CAT[c].short}</span><b>${nf(v.cat[c]||0)}</b><span class="ar" aria-hidden="true">›</span></button>`).join("");
+      const picks = ORDER.filter(c=>v.cat[c]).map(c=>`<button class="pick k-${c} num" type="button" data-v="${idx}" data-c="${c}"><i></i><span>${CAT[c].short}</span><b>${nf(v.cat[c])}</b><span class="ar" aria-hidden="true">›</span></button>`).join("");
       const fotoLocal = `fotos/${v.id}.jpg`;
       const foto = `<img class="pho" src="${esc(v.foto||fotoLocal)}" alt="Foto de ${esc(v.ap)}" loading="lazy" onerror="this.src='${esc(fotoLocal)}';this.onerror=function(){this.style.display='none';this.parentElement.querySelector('.pho-placeholder').style.display='flex'}">`+`<div class="pho pho-placeholder" style="display:none">${v.in}</div>`;
       const mesaPill = v.mesa?`<span class="pill r">${esc(v.mesa)} da Câmara</span>`:"";
-      const cargoPill = v.ini>'2025-01-01'?`<span class="pill r">No cargo desde ${formatarData(v.ini.replace(/-/g,''))}</span>`:"";
+      const cargoPill = v.ini&&v.ini>'2025-01-01'?`<span class="pill r">No cargo desde ${formatarData(v.ini.replace(/-/g,''))}</span>`:"";
       const vs = v.vs||0; const vnva = (v.vn||0)+(v.va||0);
+      const nomeExibir = v.ap&&v.ap!==v.nome?v.ap:v.nome;
+      const civilExibir = v.ap&&v.ap!==v.nome?v.nome:"";
 
       const card = `<article class="badge" style="--tint:${tint};--deep:${deep}">
         <div class="bh"><div class="slot" aria-hidden="true"></div>
-          <div class="idr">${foto}<div><h3>${esc(v.ap)}</h3><p class="civil">${esc(v.nome||"Sem nome")}</p></div></div>
+          <div class="idr">${foto}<div><h3>${esc(nomeExibir)}</h3>${civilExibir?`<p class="civil">${esc(civilExibir)}</p>`:''}</div></div>
           <div class="tags"><span class="pill">${esc(v.part||"—")}</span>${mesaPill}${cargoPill}</div>
         </div>
         <div class="bb">
-          <div class="pres">${ring}<p><b class="num">${v.P||0} de ${t}</b> sessões até agora<small class="num">${v.A||0} ${v.A===1?"ausência justificada":"ausências justificadas"} · <b class="${v.F?'bad':''}">${v.F||0} ${v.F===1?"falta":"faltas"}</b></small></p></div>
-          <div class="mini num"><div><b>R$ ${nf(16503)}</b><span>salário por mês</span></div><div><b>${nf(v.votos||0)}</b><span>votos em 2024</span></div></div>
+          <div class="pres">${ring}<p><b class="num">${t?"—":"—"}</b> sessões${t?" até agora":""}<small class="num">${t?v.P||0:"—"} ${v.P===1?"presença":"presenças"} · ${v.A||0} ${v.A===1?"ausência":"ausências"} · ${v.F||0} ${v.F===1?"falta":"faltas"}</small></p></div>
+          <div class="mini num"><div><b>R$ ${nf(16503)}</b><span>salário por mês (subsídio vigente)</span></div>${v.votos?`<div><b>${nf(v.votos)}</b><span>votos em 2024</span></div>`:''}</div>
           <div><p class="h3">O que propôs até agora</p>
-            <div class="bar5" aria-hidden="true">${bars}</div>
+            ${bars?`<div class="bar5" aria-hidden="true">${bars}</div>`:''}
             ${picks}
+            ${!picks?`<p class="mute" style="font-size:13px;margin-top:8px">Sem propostas cadastradas no período.</p>`:''}
           </div>
           <div><p class="h3">Como votou até agora</p>
-            <div class="vote num"><div><b>${nf(vs)}</b><span>vezes sim</span></div><div class="n"><b>${nf(vnva)}</b><span>${vnva?"não ou abstenção":"vezes não"}</span></div></div>
+            ${totVot?`<div class="vote num"><div><b>${nf(vs)}</b><span>vezes sim</span></div><div class="n"><b>${nf(vnva)}</b><span>${vnva?"não ou abstenção":"vezes não"}</span></div></div>`:'<p class="mute" style="font-size:13px;margin-top:8px">Dados de votação não disponíveis.</p>'}
             ${v.mesa==="Presidente"?'<p class="mute" style="font-size:13.5px;margin:8px 0 0">O presidente quase nunca vota.</p>':''}
             ${v.naos&&v.naos.length?`<p style="margin:10px 0 0"><button class="lnk" type="button" data-n="${idx}">Ver quando não votou sim →</button></p>`:''}
           </div>
