@@ -199,7 +199,8 @@
       const cat = v.cat||{};
       const bars = ORDER.map(c=>v.cat[c]?`<i class="k-${c}" style="flex:${v.cat[c]} 1 0"></i>`:"").join("");
       const picks = ORDER.map(c=>`<button class="pick k-${c} num" type="button" data-v="${idx}" data-c="${c}" ${v.cat[c]?"":"disabled"}><i></i><span>${CAT[c].short}</span><b>${nf(v.cat[c]||0)}</b><span class="ar" aria-hidden="true">›</span></button>`).join("");
-      const foto = `<img class="pho" src="/radar-recife/fotos/${v.id}.jpg" alt="Foto de ${esc(v.ap)}" loading="lazy" onerror="this.src='${esc(v.foto||"")}';this.onerror=function(){this.style.display='none';this.parentElement.querySelector('.pho-placeholder').style.display='flex'}">`+`<div class="pho pho-placeholder" style="display:none">${v.in}</div>`;
+      const fotoLocal = `fotos/${v.id}.jpg`;
+      const foto = `<img class="pho" src="${esc(v.foto||fotoLocal)}" alt="Foto de ${esc(v.ap)}" loading="lazy" onerror="this.src='${esc(fotoLocal)}';this.onerror=function(){this.style.display='none';this.parentElement.querySelector('.pho-placeholder').style.display='flex'}">`+`<div class="pho pho-placeholder" style="display:none">${v.in}</div>`;
       const mesaPill = v.mesa?`<span class="pill r">${esc(v.mesa)} da Câmara</span>`:"";
       const cargoPill = v.ini>'2025-01-01'?`<span class="pill r">No cargo desde ${formatarData(v.ini.replace(/-/g,''))}</span>`:"";
       const vs = v.vs||0; const vnva = (v.vn||0)+(v.va||0);
