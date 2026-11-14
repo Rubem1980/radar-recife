@@ -17,12 +17,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "aderaldopinto@hotmail.com",
+      "tel": "(81) 3301-1259",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 5,
+      "F": 122,
       "naos": [],
       "cat": {
         "b": 0,
@@ -32,7 +32,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=145",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/145_foto_parlamentar&v=1793522508133674229"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/145_foto_parlamentar&v=1793522508133674229",
+      "P": 416
     },
     {
       "id": "426",
@@ -42,12 +43,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "rubem@recife.pe.leg.br",
+      "tel": "3301-1220",
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 24,
       "naos": [],
       "cat": {
         "b": 0,
@@ -57,7 +58,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=426",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/426_foto_parlamentar&v=1793522508283674742"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/426_foto_parlamentar&v=1793522508283674742",
+      "P": 143
     },
     {
       "id": "168",
@@ -67,12 +69,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "alcidesteixeiraneto@hotmail.com",
+      "tel": "(81) 3301-1275",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 12,
+      "F": 146,
       "naos": [],
       "cat": {
         "b": 0,
@@ -82,7 +84,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=168",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/168_foto_parlamentar&v=1793522508162674328"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/168_foto_parlamentar&v=1793522508162674328",
+      "P": 381
     },
     {
       "id": "427",
@@ -92,12 +95,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "alef.collins@recife.pe.leg.br",
+      "tel": "3301-1348",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 20,
+      "F": 14,
       "naos": [],
       "cat": {
         "b": 0,
@@ -107,7 +110,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=427",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/427_foto_parlamentar&v=1793522508284674745"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/427_foto_parlamentar&v=1793522508284674745",
+      "P": 109
     },
     {
       "id": "165",
@@ -117,12 +121,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "professoraanalucia@recife.pe.leg.br",
+      "tel": "(81) 3301-1274",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 24,
+      "F": 114,
       "naos": [],
       "cat": {
         "b": 0,
@@ -132,7 +136,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=165",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/165_foto_parlamentar&v=1793522508158674314"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/165_foto_parlamentar&v=1793522508158674314",
+      "P": 427
     },
     {
       "id": "402",
@@ -146,8 +151,8 @@ window.RX = {
       "tel": "",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 8,
+      "F": 98,
       "naos": [],
       "cat": {
         "b": 0,
@@ -157,7 +162,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=402",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/402_foto_parlamentar&v=1793522508251674632"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/402_foto_parlamentar&v=1793522508251674632",
+      "P": 177
     },
     {
       "id": "405",
@@ -167,12 +173,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "carlos.muniz@recife.pe.leg.br",
+      "tel": "3301-1276",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 5,
+      "F": 14,
       "naos": [],
       "cat": {
         "b": 0,
@@ -182,7 +188,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=405",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/405_foto_parlamentar&v=1793522508256674649"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/405_foto_parlamentar&v=1793522508256674649",
+      "P": 224
     },
     {
       "id": "167",
@@ -192,12 +199,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "chico_kiko@hotmail.com",
+      "tel": "3301-1339",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 6,
+      "F": 128,
       "naos": [],
       "cat": {
         "b": 0,
@@ -207,7 +214,8 @@ window.RX = {
         "o": 3
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=167",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/167_foto_parlamentar&v=1793522508160674321"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/167_foto_parlamentar&v=1793522508160674321",
+      "P": 409
     },
     {
       "id": "414",
@@ -217,12 +225,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "cida.pedrosa@recife.pe.leg.br",
+      "tel": "3301-1339",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 42,
+      "F": 127,
       "naos": [],
       "cat": {
         "b": 0,
@@ -232,7 +240,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=414",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/414_foto_parlamentar&v=1793522508262674670"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/414_foto_parlamentar&v=1793522508262674670",
+      "P": 394
     },
     {
       "id": "148",
@@ -242,12 +251,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "davimunizgabinete@gmail.com",
+      "tel": "(81) 3301-1340",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 2,
+      "F": 183,
       "naos": [],
       "cat": {
         "b": 0,
@@ -257,7 +266,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=148",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/148_foto_parlamentar&v=1793522508136674239"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/148_foto_parlamentar&v=1793522508136674239",
+      "P": 307
     },
     {
       "id": "429",
@@ -267,12 +277,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "eduardo.moura@recife.pe.leg.br",
+      "tel": "3301-1244",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 1,
+      "F": 15,
       "naos": [],
       "cat": {
         "b": 0,
@@ -282,7 +292,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=429",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/429_foto_parlamentar&v=1793599650233627066"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/429_foto_parlamentar&v=1793599650233627066",
+      "P": 150
     },
     {
       "id": "150",
@@ -292,12 +303,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "eriberto.rafael@recife.pe.leg.br",
+      "tel": "(81) 3301-1234",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 14,
+      "F": 136,
       "naos": [],
       "cat": {
         "b": 0,
@@ -307,7 +318,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=150",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/150_foto_parlamentar&v=1793522508140674253"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/150_foto_parlamentar&v=1793522508140674253",
+      "P": 415
     },
     {
       "id": "410",
@@ -317,12 +329,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "fabiano.ferraz@recife.pe.leg.br",
+      "tel": "(81) 3301-1333",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 7,
+      "F": 103,
       "naos": [],
       "cat": {
         "b": 0,
@@ -332,7 +344,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=410",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/410_foto_parlamentar&v=1793522508259674660"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/410_foto_parlamentar&v=1793522508259674660",
+      "P": 251
     },
     {
       "id": "411",
@@ -342,12 +355,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "felipealecrim@recife.pe.leg.br",
+      "tel": "(81) 3301-1347",
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 115,
       "naos": [],
       "cat": {
         "b": 0,
@@ -357,7 +370,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=411",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/411_foto_parlamentar&v=1793522508260674663"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/411_foto_parlamentar&v=1793522508260674663",
+      "P": 448
     },
     {
       "id": "152",
@@ -367,12 +381,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "felipe.francismar@recife.pe.leg.br",
+      "tel": "3301-1272",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 2,
+      "F": 136,
       "naos": [],
       "cat": {
         "b": 0,
@@ -382,7 +396,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=152",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/152_foto_parlamentar&v=1793522508144674266"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/152_foto_parlamentar&v=1793522508144674266",
+      "P": 427
     },
     {
       "id": "163",
@@ -392,12 +407,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "fredferreira20620@gmail.com",
+      "tel": "3301-1231",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 1,
+      "F": 204,
       "naos": [],
       "cat": {
         "b": 0,
@@ -407,7 +422,8 @@ window.RX = {
         "o": 1
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=163",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/163_foto_parlamentar&v=1793522508154674300"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/163_foto_parlamentar&v=1793522508154674300",
+      "P": 325
     },
     {
       "id": "127",
@@ -417,12 +433,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "gilbertomeloalves25@gmail.com",
+      "tel": "3301-1359",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 7,
+      "F": 31,
       "naos": [],
       "cat": {
         "b": 0,
@@ -432,7 +448,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=127",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/127_foto_parlamentar&v=1793522508110674150"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/127_foto_parlamentar&v=1793522508110674150",
+      "P": 333
     },
     {
       "id": "431",
@@ -442,12 +459,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "gilson.machadofilho@recife.pe.leg.br",
+      "tel": "3301-1252",
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 26,
       "naos": [],
       "cat": {
         "b": 0,
@@ -457,7 +474,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=431",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/431_foto_parlamentar&v=1793599629734517602"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/431_foto_parlamentar&v=1793599629734517602",
+      "P": 141
     },
     {
       "id": "172",
@@ -467,12 +485,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "vereadorhelioguabiraba@recife.pe.leg.br",
+      "tel": "(81) 3301-1273",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 4,
+      "F": 133,
       "naos": [],
       "cat": {
         "b": 0,
@@ -482,7 +500,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=172",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/172_foto_parlamentar&v=1793522508167674345"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/172_foto_parlamentar&v=1793522508167674345",
+      "P": 428
     },
     {
       "id": "171",
@@ -492,12 +511,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "junior.bocao@recife.pe.leg.br",
+      "tel": "(81) 3301-1282",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 6,
+      "F": 132,
       "naos": [],
       "cat": {
         "b": 0,
@@ -507,7 +526,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=171",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/171_foto_parlamentar&v=1793522508164674335"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/171_foto_parlamentar&v=1793522508164674335",
+      "P": 427
     },
     {
       "id": "130",
@@ -517,12 +537,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "jairo.britto@bol.com.br",
+      "tel": "81 3301.1232/ 81 3301.1281",
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 111,
       "naos": [],
       "cat": {
         "b": 0,
@@ -532,7 +552,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=130",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/130_foto_parlamentar&v=1793522508113674160"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/130_foto_parlamentar&v=1793522508113674160",
+      "P": 327
     },
     {
       "id": "432",
@@ -542,12 +563,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "jo.cavalcanti@recife.pe.leg.br",
+      "tel": "3301-1362",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 8,
+      "F": 23,
       "naos": [],
       "cat": {
         "b": 0,
@@ -557,7 +578,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=432",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/432_foto_parlamentar&v=1793522508313674844"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/432_foto_parlamentar&v=1793522508313674844",
+      "P": 136
     },
     {
       "id": "415",
@@ -567,12 +589,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "ze.neto@recife.pe.leg.br",
+      "tel": "3301-1332",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 3,
+      "F": 119,
       "naos": [],
       "cat": {
         "b": 0,
@@ -582,7 +604,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=415",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/415_foto_parlamentar&v=1793522508263674673"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/415_foto_parlamentar&v=1793522508263674673",
+      "P": 441
     },
     {
       "id": "433",
@@ -592,12 +615,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "juniordecletooficial@gmail.com",
+      "tel": "3301-1239",
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 14,
       "naos": [],
       "cat": {
         "b": 0,
@@ -607,7 +630,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=433",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/433_foto_parlamentar&v=1793522508313674844"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/433_foto_parlamentar&v=1793522508313674844",
+      "P": 153
     },
     {
       "id": "434",
@@ -617,12 +641,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "kari.santos@recife.pe.leg.br",
+      "tel": "3301-1343",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 14,
+      "F": 14,
       "naos": [],
       "cat": {
         "b": 0,
@@ -632,7 +656,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=434",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/434_foto_parlamentar&v=1793522508315674851"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/434_foto_parlamentar&v=1793522508315674851",
+      "P": 139
     },
     {
       "id": "406",
@@ -642,12 +667,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "lianacirne@recife.pe.leg.br",
+      "tel": "(81) 3301-1341",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 13,
+      "F": 148,
       "naos": [],
       "cat": {
         "b": 0,
@@ -657,7 +682,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=406",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/406_foto_parlamentar&v=1793522508256674649"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/406_foto_parlamentar&v=1793522508256674649",
+      "P": 402
     },
     {
       "id": "111",
@@ -667,12 +693,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "leustaquioneto@uol.com.br",
+      "tel": " (81) 3301-1213",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 14,
+      "F": 128,
       "naos": [],
       "cat": {
         "b": 0,
@@ -682,7 +708,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=111",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/111_foto_parlamentar&v=1793522508103674126"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/111_foto_parlamentar&v=1793522508103674126",
+      "P": 423
     },
     {
       "id": "164",
@@ -692,12 +719,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "vereadoranataliademenudo@outlook.com",
+      "tel": "(81) 3301-1325",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 13,
+      "F": 155,
       "naos": [],
       "cat": {
         "b": 0,
@@ -707,7 +734,8 @@ window.RX = {
         "o": 3
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=164",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/164_foto_parlamentar&v=1793522508156674307"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/164_foto_parlamentar&v=1793522508156674307",
+      "P": 348
     },
     {
       "id": "42",
@@ -717,12 +745,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
-      "whats": "",
+      "email": "osmar.ricardo@recife.pe.leg.br",
+      "tel": "81 33011337",
+      "whats": "81 33011228",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 3,
+      "F": 171,
       "naos": [],
       "cat": {
         "b": 0,
@@ -732,7 +760,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=42",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/42_foto_parlamentar&v=1793522508301674803"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/42_foto_parlamentar&v=1793522508301674803",
+      "P": 371
     },
     {
       "id": "407",
@@ -742,12 +771,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "paulomuniz@recife.pe.leg.br",
+      "tel": "3301-1346",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 12,
+      "F": 160,
       "naos": [],
       "cat": {
         "b": 0,
@@ -757,7 +786,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=407",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/407_foto_parlamentar&v=1793522508257674653"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/407_foto_parlamentar&v=1793522508257674653",
+      "P": 391
     },
     {
       "id": "166",
@@ -767,12 +797,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "gabinete.rinaldojunior@recife.pe.leg.br",
+      "tel": "3301-1242",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 5,
+      "F": 116,
       "naos": [],
       "cat": {
         "b": 0,
@@ -782,7 +812,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=166",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/166_foto_parlamentar&v=1793522508160674321"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/166_foto_parlamentar&v=1793522508160674321",
+      "P": 399
     },
     {
       "id": "174",
@@ -792,12 +823,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
+      "email": "rodrigo.coutinho@recife.pe.leg.br",
       "tel": "",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 2,
+      "F": 59,
       "naos": [],
       "cat": {
         "b": 0,
@@ -807,7 +838,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=174",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/174_foto_parlamentar&v=1793522508170674355"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/174_foto_parlamentar&v=1793522508170674355",
+      "P": 184
     },
     {
       "id": "160",
@@ -817,12 +849,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "romerinho.jatoba@recife.pe.leg.br",
+      "tel": "(81) 3301-1360",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 71,
+      "F": 120,
       "naos": [],
       "cat": {
         "b": 0,
@@ -832,7 +864,8 @@ window.RX = {
         "o": 4
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=160",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/160_foto_parlamentar&v=1793522508151674290"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/160_foto_parlamentar&v=1793522508151674290",
+      "P": 374
     },
     {
       "id": "177",
@@ -842,12 +875,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "samuel.salazar@recife.pe.leg.br",
+      "tel": "3301-1212",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 6,
+      "F": 114,
       "naos": [],
       "cat": {
         "b": 0,
@@ -857,7 +890,8 @@ window.RX = {
         "o": 4
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=177",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/177_foto_parlamentar&v=1793522508174674369"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/177_foto_parlamentar&v=1793522508174674369",
+      "P": 445
     },
     {
       "id": "409",
@@ -867,12 +901,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "tadeu.calheiros@recife.pe.leg.br",
+      "tel": "3301-1335",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 14,
+      "F": 112,
       "naos": [],
       "cat": {
         "b": 0,
@@ -882,7 +916,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=409",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/409_foto_parlamentar&v=1793522508259674660"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/409_foto_parlamentar&v=1793522508259674660",
+      "P": 437
     },
     {
       "id": "435",
@@ -892,12 +927,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "thiago.medina@recife.pe.leg.br",
+      "tel": "3301-1331",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 3,
+      "F": 17,
       "naos": [],
       "cat": {
         "b": 0,
@@ -907,7 +942,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=435",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/435_foto_parlamentar&v=1793522508316674854"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/435_foto_parlamentar&v=1793522508316674854",
+      "P": 147
     },
     {
       "id": "158",
@@ -917,12 +953,12 @@ window.RX = {
       "votos": 0,
       "ini": "2025-01-01",
       "mesa": "",
-      "email": "",
-      "tel": "",
+      "email": "wiltonbrito@recife.pe.leg.br",
+      "tel": "(81)3301.1214 / 3301.1275",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 6,
+      "F": 142,
       "naos": [],
       "cat": {
         "b": 0,
@@ -932,7 +968,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=158",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/158_foto_parlamentar&v=1793522508150674287"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/158_foto_parlamentar&v=1793522508150674287",
+      "P": 353
     },
     {
       "id": "437",
@@ -946,8 +983,8 @@ window.RX = {
       "tel": "",
       "whats": "",
       "vs": 0,
-      "A": 0,
-      "F": 0,
+      "A": 1,
+      "F": 2,
       "naos": [],
       "cat": {
         "b": 0,
@@ -957,7 +994,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=437",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/437_foto_parlamentar&v=1793522508317674858"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/437_foto_parlamentar&v=1793522508317674858",
+      "P": 23
     },
     {
       "id": "436",
@@ -972,7 +1010,7 @@ window.RX = {
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 1,
       "naos": [],
       "cat": {
         "b": 0,
@@ -982,7 +1020,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=436",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/436_foto_parlamentar&v=1793522508317674858"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/436_foto_parlamentar&v=1793522508317674858",
+      "P": 0
     },
     {
       "id": "422",
@@ -997,7 +1036,7 @@ window.RX = {
       "whats": "",
       "vs": 0,
       "A": 0,
-      "F": 0,
+      "F": 57,
       "naos": [],
       "cat": {
         "b": 0,
@@ -1007,7 +1046,8 @@ window.RX = {
         "o": 0
       },
       "url": "https://e-processo.recife.pe.leg.br/consultas/parlamentar/parlamentar_mostrar_proc?cod_parlamentar=422",
-      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/422_foto_parlamentar&v=1793542865080411936"
+      "foto": "https://e-processo.recife.pe.leg.br/@@sapl_documentos_download?path=parlamentar/fotos/422_foto_parlamentar&v=1793542865080411936",
+      "P": 195
     }
   ],
   "items": [
