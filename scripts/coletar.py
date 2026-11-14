@@ -208,10 +208,31 @@ def coletar_proposicoes(vereadores):
     items = []
     item_ordem = 0
 
+    # Padrões para classificar por tipo quando o tipo SAPL não é confiável
+    REQ_PATTERNS = re.compile(r"^(REQ|REQUERIMENTO|REQUER\b)", re.IGNORECASE)
+    IND_PATTERNS = re.compile(r"^(IND|INDICA[ÇC][AÀ]O|INDICA\b)", re.IGNORECASE)
+    HOM_PATTERNS = re.compile(r"^(HOM|HOMENAGEM|VOTO DE|T[ÍI]TULO|MEDALHA)", re.IGNORECASE)
+    LEI_PATTERNS = re.compile(r"^(PLO|PROJETO DE LEI|PROJETO DE LEI COMPLEMENTAR|EMENDA)", re.IGNORECASE)
+
+    def classificar_tipo(tipo_cat, sgl, ementa):
+        """Melhora classificação de tipo usando sigla e ementa."""
+        sgl_upper = (sgl or "").upper()
+        ementa_upper = (ementa or "").upper()
+        if REQ_PATTERNS.match(sgl_upper) or REQ_PATTERNS.match(ementa_upper):
+            return "c"
+        if IND_PATTERNS.match(sgl_upper) or IND_PATTERNS.match(ementa_upper):
+            return "b"
+        if HOM_PATTERNS.match(sgl_upper) or HOM_PATTERNS.match(ementa_upper):
+            return "h"
+        if LEI_PATTERNS.match(sgl_upper) or LEI_PATTERNS.match(ementa_upper):
+            return "l"
+        return tipo_cat
+
     for v in vereadores:
         vid = v["id"]
         nome = v["nome"]
         print(f"   -> {nome} (id={vid})")
+        codigos_vistos_v = set()  # dedup apenas dentro do mesmo vereador
 
         for ano in ANOS_COLETA:
             for tipo_sapl in sorted(TIPO_PARA_CAT.keys(), key=int):
@@ -234,6 +255,10 @@ def coletar_proposicoes(vereadores):
 
                 for m in lista:
                     cod = m.get("cod_materia")
+                    if not cod or cod in codigos_vistos_v:
+                        continue
+                    codigos_vistos_v.add(cod)
+
                     sgl = m.get("sgl_tipo_materia", "")
                     num = m.get("num_ident_basica", "")
                     ano_mat = m.get("ano_ident_basica", "")
@@ -245,10 +270,7 @@ def coletar_proposicoes(vereadores):
                         situacao = limpar_texto(ult["des_status"])
                     aprovado = "Aprovado" if (situacao and "aprovado" in situacao.lower()) else ""
 
-                    tipo_cat = TIPO_PARA_CAT.get(tipo_sapl, "o")
-                    # Detectar indicações pelo texto da ementa quando tipo não mapeado
-                    if tipo_cat == "o" and ementa and re.match(r"^(indica|indicação|indicaçoes|recomenda)", ementa.strip(), re.IGNORECASE):
-                        tipo_cat = "b"
+                    tipo_cat = classificar_tipo(TIPO_PARA_CAT.get(tipo_sapl, "o"), sgl, ementa)
                     tipo_numero = f"{sgl} {num}/{ano_mat}" if sgl and num else str(cod)
 
                     item = [
